@@ -2,7 +2,7 @@
 
 /* ===== 공통 컨테이너 ===== */
 .chat-container {
-  display: flex;           /* 가로 배치 (여기서는 세로 배치로 column 지정했으므로 주의) */
+  display: flex;           /* 가로 배치 (여기서는 세로 배치로 column 지정하셨으므로 주의) */
   flex-direction: column;  /* 세로 방향으로 쌓기 */
   align-items: flex-start; /* 왼쪽 정렬 */
   margin-bottom: 12px;     /* 말풍선 간 간격 */
@@ -23,24 +23,26 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 8px; /* 이미지와 글 사이 여백 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
 }
 
 /* ===== 캐릭터 이름 ===== */
 .chat-container .character-name {
   font-weight: bold;
   margin-right: 8px;
-  /* 사이트에 맞춰 임의로 지정 (원하는 색상 사용) */
+  /* 티스토리에 맞춰 임의로 지정 (원하는 색상 사용) */
   color: #000000;
 }
 
 /* ===== 말풍선 ===== */
 .chat-container .speech-bubble {
   position: relative;
-  /* 배경을 40% 불투명도로 지정 */
+  /* 예: 흰색 배경을 80% 불투명도로 지정 */
   background-color: rgba(240, 240, 240, 0.4);
   color: #333;
   border: 1px solid rgba(220, 220, 220, 0.6);
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
   padding: 8px 12px;
   margin-left: 38px;
   max-width: 500px;
